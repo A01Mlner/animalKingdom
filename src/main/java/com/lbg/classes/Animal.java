@@ -10,6 +10,16 @@ public abstract class Animal {
     private Habitat[] habitat;
     private Continent[] continent;
 
+    public String getAnimalName() {
+        return animalName;
+    }
+
+    public void setAnimalName(String animalName) {
+        this.animalName = animalName;
+    }
+
+    public String animalName;
+
 
     public Continent[] getContinent() {
         return continent;
@@ -33,6 +43,7 @@ public abstract class Animal {
         this.reproductionMethod = ReproductionMethod.UNKNOWN;
         this.habitat = new Habitat[]{Habitat.UNKNOWN};
         this.continent = new Continent[]{Continent.UNKNOWN};
+        this.animalName = "Unknown";
     }
 
 
