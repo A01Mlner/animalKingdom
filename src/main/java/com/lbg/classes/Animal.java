@@ -8,8 +8,22 @@ public abstract class Animal {
     private ReproductionMethod reproductionMethod;
 
     private Habitat[] habitat;
-
     private Continent[] continent;
+
+
+    public Continent[] getContinent() {
+        return continent;
+    }
+
+    public void setContinent(Continent[] continent) {
+        this.continent = continent;
+    }
+
+    public abstract void moveAnimal();
+
+    public abstract void makeNoise();
+
+
 
     public Animal() {
         this.weight = 1;
@@ -74,11 +88,5 @@ public abstract class Animal {
         this.habitat = habitat;
     }
 
-    public Continent getContinent() {
-        return continent;
-    }
 
-    public void setContinent(Continent continent) {
-        this.continent = continent;
-    }
 }
