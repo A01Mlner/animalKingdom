@@ -8,4 +8,5 @@ public enum Continent {
     AFRICA,
     ANTARCTICA,
     AUSTRALASIA,
+    UNKNOWN
 }
