@@ -1,0 +1,5 @@
+package com.lbg.classes;
+
+public enum Habitat {
+    FORREST,FRESH_WATER,SALT_WATER,DESERT,TUNDRA,PLAINS,MOUNTAIN,SUBTERRANEAN,SWAMP,HOUSE
+}
