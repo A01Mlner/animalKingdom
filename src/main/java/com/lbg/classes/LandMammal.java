@@ -1,6 +1,8 @@
 package com.lbg.classes;
 
-public class LandMammal extends LandAnimal {
+public class LandMammal extends LandAnimal implements ILiveBirthAble,IEatAble{
+
+
 
     public LandMammal(int numberOfLegs, boolean swim, boolean wings, String sound) {
         super(numberOfLegs, swim, wings);
@@ -42,5 +44,14 @@ public class LandMammal extends LandAnimal {
 
         // Return the result as a String
         return sb.toString();
+    }
+
+    @Override
+    public void getEaten() {
+        System.out.println(this.getAnimalName()+" tries to run away");
+        StringBuilder sb = new StringBuilder();
+        sb.append(capitalize(sound)).append(" ").append(sound).append(" ......");
+        System.out.println(sb);
+        System.out.println(this.getAnimalName()+" was caught... oh no! I am getting eaten.");
     }
 }

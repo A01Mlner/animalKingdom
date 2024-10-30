@@ -2,6 +2,7 @@ package com.lbg.classes;
 
 public abstract class Animal {
 
+
     private double weight,height,topSpeed;
     private int age;
 
